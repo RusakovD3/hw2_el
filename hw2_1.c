@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define N 3
 
@@ -9,15 +10,10 @@ int main() {
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < N; ++j) {
             matrix[i][j] = val++;
-        }
-    }
-    
-    for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
             printf("%d ", matrix[i][j]);
         }
         printf("\n");
     }
 
-    return 0;
+    exit(EXIT_SUCCESS);
 }

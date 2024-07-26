@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define N 7
 
@@ -33,6 +34,7 @@ int main() {
             startCol++;
         }
     }
+
     printf("Matrix:\n");
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; ++j) {
@@ -41,5 +43,5 @@ int main() {
         printf("\n");
     }
 
-    return 0;
+    exit(EXIT_SUCCESS);
 }

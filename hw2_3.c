@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define N 6
 
 int main() {
     int matrix[N][N];
-    
+
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < N; ++j) {
             if (i >= N - j - 1) {
@@ -23,5 +24,5 @@ int main() {
         printf("\n");
     }
 
-    return 0;
+    exit(EXIT_SUCCESS);
 }
